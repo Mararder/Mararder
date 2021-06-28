@@ -90,12 +90,14 @@ const UseStatuCmp: React.FC<any> = props => {
             {
               dataSource.map((row) => <tr>{
                 columns.map(col => {
-                  // @ts-ignore
-                  if (col.dataIndex === "handle") {
+                  const dataIndex = col.dataIndex
+                  if (dataIndex === "handle") {
                     return <td><Button onClick={() => del(row)}>删除</Button></td>
                   }
-                  // @ts-ignore
-                  return <td>{row[col.dataIndex]}</td>
+                  else {
+                    // @ts-ignore
+                    return <td>{row[dataIndex]}</td>
+                  }
                 })
               }</tr>)
             }

@@ -41,6 +41,22 @@ const routers: IRouters[] = [
                 path: "/es6/map",
                 component: "page/es6/map",
                 exact: true
+            },
+            {
+                id: "2-3",
+                name: "set用法",
+                to: "/es6/set",
+                path: "/es6/set",
+                component: "page/es6/set",
+                exact: true
+            },
+            {
+                id: "2-4",
+                name: "promise用法",
+                to: "/es6/promise",
+                path: "/es6/promise",
+                component: "page/es6/promise",
+                exact: true
             }
         ]  
     },
@@ -101,6 +117,14 @@ const routers: IRouters[] = [
                 exact: true  
             }
         ] 
+    },
+    {
+        id: "4",
+        name: "mathjax数学公式工具",
+        to: "/mathjax",
+        path: "/mathjax",
+        component: "page/math-jax",
+        exact: true  
     }
 ]
 

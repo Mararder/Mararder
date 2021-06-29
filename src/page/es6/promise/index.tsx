@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { Button } from "antd";
 
 const PromiseComponent: React.FC<any> = (props) => {
-  const [status] = useState<boolean>(false)  
+  const [status, setStatus] = useState<boolean>(false)
+  const [name, setName] = useState<string>("promise")
+  const _onClick = () => {
+    setName("promise - " + status)
+    setStatus(!status)
+  }  
   useEffect(() => {
     new Promise((resolve, reject) => {
       if (status) {
@@ -17,7 +23,10 @@ const PromiseComponent: React.FC<any> = (props) => {
       console.log("执行完毕")
     })
   }, [status])
-  return <>promise</>
+  return <>
+    {name}
+    <div><Button onClick={_onClick}>click</Button></div>
+  </>
 }
 
 export default PromiseComponent

@@ -56,6 +56,11 @@
     "cz-conventional-changelog": "3.3.0",
     "husky": "^6.0.0"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

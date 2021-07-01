@@ -57,6 +57,14 @@ const routers: IRouters[] = [
                 path: "/es6/promise",
                 component: "page/es6/promise",
                 exact: true
+            },
+            {
+                id: "2-5",
+                name: "Array数组用法",
+                to: "/es6/array",
+                path: "/es6/array",
+                component: "page/es6/array",
+                exact: true
             }
         ]  
     },

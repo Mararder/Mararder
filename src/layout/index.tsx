@@ -18,7 +18,7 @@ const LayoutComponent: React.FC<any> = (props) => {
             });
             return childer
                 ? renderRoutes(childer)
-                : <Route key={id} path={path} exact={exact} form="/" component={() => <Cmp />} />
+                : <Route key={id} path={path} exact={exact} component={() => <Cmp />} />
         })
     }
     return (

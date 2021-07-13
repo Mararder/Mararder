@@ -41,7 +41,7 @@ const LayoutComponent: React.FC<any> = (props) => {
                     <Menu />
                 </Sider>
                 <Layout>
-                    <Content style={{ padding: 20 }}>
+                    <Content style={{ padding: 20, overflowY: "auto" }}>
                         <Switch>
                             {renderRoutes()}
                             <Redirect exact to="/home" from='/' />

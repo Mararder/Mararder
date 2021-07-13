@@ -65,6 +65,14 @@ const routers: IRouters[] = [
                 path: "/es6/array",
                 component: "page/es6/array",
                 exact: true
+            },
+            {
+                id: "2-6",
+                name: "ES6 字符串",
+                to: "/es6/string",
+                path: "/es6/string",
+                component: "page/es6/string",
+                exact: true
             }
         ]  
     },

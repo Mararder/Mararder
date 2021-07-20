@@ -68,10 +68,18 @@ const routers: IRouters[] = [
             },
             {
                 id: "2-6",
-                name: "ES6 字符串",
+                name: "ES6 字符串 String",
                 to: "/es6/string",
                 path: "/es6/string",
                 component: "page/es6/string",
+                exact: true
+            },
+            {
+                id: "2-7",
+                name: "ES6 数值 Number",
+                to: "/es6/number",
+                path: "/es6/number",
+                component: "page/es6/number",
                 exact: true
             }
         ]  

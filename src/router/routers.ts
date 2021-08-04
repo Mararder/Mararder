@@ -81,6 +81,14 @@ const routers: IRouters[] = [
                 path: "/es6/number",
                 component: "page/es6/number",
                 exact: true
+            },
+            {
+                id: "2-8",
+                name: "es6 class 用法",
+                to: "/es6/class",
+                path: "/es6/class",
+                component: "page/es6/class",
+                exact: true
             }
         ]  
     },
